@@ -2,7 +2,7 @@
 Linux Kernel 4.12 with Intel GPU-Accelerated Precise Touch & Stylus (IPTS) support. Basically to get touch screen working on my surface pro 4. I  have gone through and updated the drivers to integrate with the changes of the kernel from 4.90-rc3 to 4.12-rcA
 
 I've included the module, firmware and patches to compile kernel. I've also included ubuntu mainline patches for building
-as an Ubuntu kernel, however this should be able to be applied to all distro's. You will need the the [IPTS linux firmware](https://github.com/axelrtgs/linux-firmware-ipts) which can be found[here](https://github.com/axelrtgs/linux-firmware-ipts). An example to compile as an Ubuntu kernel:
+as an Ubuntu kernel, however this should be able to be applied to all distro's. You will need the the [IPTS linux firmware](https://github.com/axelrtgs/linux-firmware-ipts) which can be found [here](https://github.com/axelrtgs/linux-firmware-ipts). An example to compile as an Ubuntu kernel:
 ```
 $ git clone https://github.com/dtrip/linux-ipts ~/linux
 $ cd ~/linux
@@ -35,6 +35,9 @@ Hopefully it builds successfully. I can say I was able to successfully build on 
 
 ## Many thanks
 [ipts-linux-org](https://github.com/ipts-linux-org)
+
 [jimdigriz](https://github.com/jimdigriz)
+
 [fridgecow](https://github.com/fridgecow)
+
 [axelrtgs](https://github.com/axelrtgs)
