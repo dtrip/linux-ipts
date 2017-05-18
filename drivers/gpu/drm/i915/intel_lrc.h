@@ -79,6 +79,13 @@ struct drm_i915_private;
 struct i915_gem_context;
 
 uint32_t intel_lr_context_size(struct intel_engine_cs *engine);
+int execlists_context_deferred_alloc(struct i915_gem_context *ctx,
+					    struct intel_engine_cs *engine);
+int execlists_context_pin(struct intel_engine_cs *engine,
+				struct i915_gem_context *ctx);
+void execlists_context_unpin(struct intel_engine_cs *engine,
+				    struct i915_gem_context *ctx);
+
 
 void intel_lr_context_resume(struct drm_i915_private *dev_priv);
 uint64_t intel_lr_context_descriptor(struct i915_gem_context *ctx,

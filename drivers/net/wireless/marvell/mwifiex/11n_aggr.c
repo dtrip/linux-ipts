@@ -185,7 +185,7 @@ mwifiex_11n_aggregate_pkt(struct mwifiex_private *priv,
 	/* skb_aggr->data already 64 byte align, just reserve bus interface
 	 * header and txpd.
 	 */
-	skb_reserve(skb_aggr, headroom + sizeof(struct txpd));
+	/* skb_reserve(skb_aggr, headroom + sizeof(struct txpd)); */
 	tx_info_aggr =  MWIFIEX_SKB_TXCB(skb_aggr);
 
 	memset(tx_info_aggr, 0, sizeof(*tx_info_aggr));
