@@ -26,7 +26,7 @@ $ fakeroot scripts/config --set-val EXTRA_FIRMWARE_DIR 'firmware'
 $ fakeroot scripts/config --set-val EXTRA_FIRMWARE 'intel/ipts/ipts_fw_config.bin'
 $ fakeroot scripts/config --disable CFG80211_DEFAULT_PS
 $ make oldconfig
-$ fakeroot make-kpkg -j `getconf _NPROCESSORS_ONLN` 3 --initrd --append-to-version=-ipts kernel_image kernel-headers
+$ fakeroot make-kpkg -j `getconf _NPROCESSORS_ONLN` --initrd --append-to-version=-ipts kernel_image kernel-headers
 % sudo dpkg -i ../linux-headers-4.12.0-rc1-ipts+_4.12.0-rc1-ipts+-10.00.Custom_amd64.deb ../linux-image-4.12.0-rc1-ipts+_4.12.0-rc1-ipts+-10.00.Custom_amd64.deb
 ```
 
