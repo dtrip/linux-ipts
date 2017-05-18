@@ -2,7 +2,7 @@
 Linux Kernel 4.12 with Intel GPU-Accelerated Precise Touch & Stylus (IPTS) support. Basically to get touch screen working on my surface pro 4. I  have gone through and updated the drivers to integrate with the changes of the kernel from 4.90-rc3 to 4.12-rcA
 
 I've included the module, firmware and patches to compile kernel. I've also included ubuntu mainline patches for building
-as an Ubuntu kernel, however this should be able to be applied to all distro's. You will need the the [https://github.com/axelrtgs/linux-firmware-ipts](IPTS linux firmware which) can be found [https://github.com/axelrtgs/linux-firmware-ipts](here). An example to compile as an Ubuntu kernel:
+as an Ubuntu kernel, however this should be able to be applied to all distro's. You will need the the [IPTS linux firmware](https://github.com/axelrtgs/linux-firmware-ipts) which can be found[here](https://github.com/axelrtgs/linux-firmware-ipts). An example to compile as an Ubuntu kernel:
 ```
 $ git clone https://github.com/dtrip/linux-ipts ~/linux
 $ cd ~/linux
@@ -30,11 +30,11 @@ $ fakeroot make-kpkg -j `getconf _NPROCESSORS_ONLN` 3 --initrd --append-to-versi
 % sudo dpkg -i ../linux-headers-4.12.0-rc1-ipts+_4.12.0-rc1-ipts+-10.00.Custom_amd64.deb ../linux-image-4.12.0-rc1-ipts+_4.12.0-rc1-ipts+-10.00.Custom_amd64.deb
 ```
 
-Hopefully it builds successfully. I can say I was able to successfully build on my surface pro 4 running Ubuntu 16.10. I have uploaded the deb packages should you be wanting to simply install on another surface pro to get touch screen working (Note: you will still probably need the IPTS firmware as described [https://github.com/ipts-linux-org/ipts-linux-new/wiki](here))
+Hopefully it builds successfully. I can say I was able to successfully build on my surface pro 4 running Ubuntu 16.10. I have uploaded the deb packages should you be wanting to simply install on another surface pro to get touch screen working (Note: you will still probably need the IPTS firmware as described [here](https://github.com/ipts-linux-org/ipts-linux-new/wiki))
 
 
 ## Many thanks
-[https://github.com/ipts-linux-org](ipts-linux-org)
-[https://github.com/jimdigriz](jimdigriz)
-[https://github.com/fridgecow](fridgecow)
-[https://github.com/axelrtgs](axelrtgs)
+[ipts-linux-org](https://github.com/ipts-linux-org)
+[jimdigriz](https://github.com/jimdigriz)
+[fridgecow](https://github.com/fridgecow)
+[axelrtgs](https://github.com/axelrtgs)
