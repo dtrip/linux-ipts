@@ -7,12 +7,12 @@ as an Ubuntu kernel, however this should be able to be applied to all distro's. 
 $ git clone https://github.com/dtrip/linux-ipts ~/linux
 $ cd ~/linux
 $ patch -p1 -i 0001-base-packaging.patch
-$ patch -p1 -i 
-$ patch -p1 -i 
-$ patch -p1 -i 
-$ patch -p1 -i 
-$ patch -p1 -i 
-$ patch -p1 -i 
+$ patch -p1 -i 0002-UBUNTU-SAUCE-add-vmlinux.strip-to-BOOT_TARGETS1-on-p.patch
+$ patch -p1 -i 0003-UBUNTU-SAUCE-tools-hv-lsvmbus-add-manual-page.patch
+$ patch -p1 -i 0004-UBUNTU-SAUCE-no-up-disable-pie-when-gcc-has-it-enabl.patch
+$ patch -p1 -i 0005-UBUNTU-Debian-Use-default-compression-for-all-packag.patch
+$ patch -p1 -i 0006-debian-changelog.patch
+$ patch -p1 -i 0007-configs-based-on-Ubuntu-4.11.0-0.4.patch 
 $ cp /boot/config-`uname -r` .config
 $ chmod a+x debian/*
 $ chmod a+x debian/scripts/*
