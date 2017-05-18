@@ -33,8 +33,8 @@ $ fakeroot make-kpkg -j `getconf _NPROCESSORS_ONLN` 3 --initrd --append-to-versi
 Hopefully it builds successfully. I can say I was able to successfully build on my surface pro 4 running Ubuntu 16.10. I have uploaded the deb packages should you be wanting to simply install on another surface pro to get touch screen working (Note: you will still probably need the IPTS firmware as described [https://github.com/ipts-linux-org/ipts-linux-new/wiki](here))
 
 
-### Many thanks
-(https://github.com/ipts-linux-org)[ipts-linux-org]
-(https://github.com/jimdigriz)[jimdigriz]
-(https://github.com/fridgecow)[fridgecow]
-(https://github.com/axelrtgs)[axelrtgs]
+## Many thanks
+[https://github.com/ipts-linux-org](ipts-linux-org)
+[https://github.com/jimdigriz](jimdigriz)
+[https://github.com/fridgecow](fridgecow)
+[https://github.com/axelrtgs](axelrtgs)
